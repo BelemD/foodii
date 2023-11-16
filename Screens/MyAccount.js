@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, View, Image, ScrollView, TextInput, SafeAreaView, Button, Alert, Text, ImageBackground, Modal, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faAddressBook, faArrowUpFromBracket, faBell, faChevronRight, faCircleQuestion, faCompass, faEnvelope, faLocationCrosshairs, faLocationDot, faMoon } from '@fortawesome/free-solid-svg-icons';
+import {  faBell, faChevronRight, faCircleQuestion, faClose, faCompass,  faLocationCrosshairs, faLocationDot, faMoon } from '@fortawesome/free-solid-svg-icons';
 import ToggleSwitch from 'toggle-switch-react-native';
 
 const Card = ({ icon, description, arrow, toggle,text, onPress }) => {
@@ -32,7 +32,12 @@ export default MyAccount = ({ navigation }) => {
     [isDarkMode, setIsDarkMode] = useState(false);
     return (
         <SafeAreaView style={isDarkMode ? { backgroundColor: '#000000', flex: 1 } : { backgroundColor: 'white', flex: 1 }}>
-            <View style={{ alignItems: 'center', marginTop: "5%", padding: 10 }}>
+            <View style={{ alignItems: 'center', marginTop: "5%", padding: 10, flexDirection:'row' }}>
+            <View style={{marginRight:"30%", padding:10}}>
+                <TouchableOpacity onPress={()=>{navigation.navigate('HomePage')}}>
+                    <FontAwesomeIcon size={25} icon={faClose} style={isDarkMode?{ position: 'relative', left: 0, padding: 5, color:'white' } : { position: 'relative', left: 0, padding: 5 }} />
+                    </TouchableOpacity>
+                </View>
                 <Text style={isDarkMode? { fontWeight: 'bold', fontSize: 20, color:'white' }: { fontWeight: 'bold', fontSize: 20 }}>My Account</Text>
             </View>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -48,7 +53,6 @@ export default MyAccount = ({ navigation }) => {
             <View style={{ marginTop: 20 }}>
                 <Card icon={faCompass} description='Orders' arrow={faChevronRight} />
                 <Card icon={faLocationDot} description='Address' arrow={faChevronRight} />
-                <Card icon={faCompass} description='My Orders' arrow={faChevronRight} />
                 <Card icon={faCircleQuestion} description='Help' arrow={faChevronRight} />
                 <Card icon={faBell} description='Notification' toggle={<ToggleSwitch onColor='#FF6600' isOn={isNotificationOn} onToggle={() => { setIsNotificationOn(!isNotificationOn) }} />} />
                 <Card icon={faLocationCrosshairs} description='Language' text={<Text style={{ color: '#FF6600' }}>Eng(US)</Text>} />

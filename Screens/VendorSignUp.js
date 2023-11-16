@@ -28,7 +28,7 @@ export default VendorSignUp = ({navigation}) => {
             </View>
             <View style={{ marginTop: 60 }}>
             <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faAddressBook} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faAddressBook} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -37,7 +37,7 @@ export default VendorSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -48,7 +48,7 @@ export default VendorSignUp = ({navigation}) => {
                 />
                 </View>
                 <View style={{flexDirection:'row', alignItems:'center'}}> 
-                <FontAwesomeIcon size={20} icon={faEnvelope} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faEnvelope} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         flexDirection:'row',
@@ -58,7 +58,7 @@ export default VendorSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50
                     }}
                     placeholder='Address/Location'
@@ -68,7 +68,7 @@ export default VendorSignUp = ({navigation}) => {
                 />
                 </View>
                 <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faBowlFood} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faBowlFood} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -77,7 +77,7 @@ export default VendorSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -89,7 +89,7 @@ export default VendorSignUp = ({navigation}) => {
                 </View>
                 
                 <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faLock} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faLock} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -98,7 +98,7 @@ export default VendorSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -110,7 +110,7 @@ export default VendorSignUp = ({navigation}) => {
                 />
                 </View>
                 <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faUnlock} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faUnlock} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -119,7 +119,7 @@ export default VendorSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}

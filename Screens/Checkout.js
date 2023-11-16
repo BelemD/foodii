@@ -38,11 +38,11 @@ export default Checkout = ({navigation}) => {
                         style={{
                             flexDirection: 'row',
                             padding: 10,
-                            margin: 10,
+                            margin: 8,
                             height: 40,
                             width: 400,
                             backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                            borderRadius: 10,
+                            borderRadius: 15,
                             paddingLeft: 50
                         }}
                         placeholder='Delivery Address'
@@ -57,12 +57,13 @@ export default Checkout = ({navigation}) => {
                         style={{
                             flexDirection: 'row',
                             padding: 10,
-                            margin: 10,
+                            margin: 8,
                             height: 40,
                             width: 400,
                             backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                            borderRadius: 10,
-                            paddingLeft: 50
+                            borderRadius: 15,
+                            paddingLeft: 50,
+                            marginBottom:10
                         }}
                         placeholder='Phone Number'
                         placeholderTextColor='black'

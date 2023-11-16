@@ -29,7 +29,7 @@ export default UserSignUp = ({navigation}) => {
             </View>
             <View style={{ marginTop: 150 }}>
             <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faAddressBook} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faAddressBook} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -38,7 +38,7 @@ export default UserSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -49,7 +49,7 @@ export default UserSignUp = ({navigation}) => {
                 />
                 </View>
                 <View style={{flexDirection:'row', alignItems:'center'}}> 
-                <FontAwesomeIcon size={20} icon={faEnvelope} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faEnvelope} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         flexDirection:'row',
@@ -59,7 +59,7 @@ export default UserSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50
                     }}
                     placeholder='Email'
@@ -70,7 +70,7 @@ export default UserSignUp = ({navigation}) => {
                 </View>
                 
                 <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faLock} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faLock} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -79,7 +79,7 @@ export default UserSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -91,7 +91,7 @@ export default UserSignUp = ({navigation}) => {
                 />
                 </View>
                 <View style={{flexDirection:'row', alignItems:'center'}}>
-                <FontAwesomeIcon size={20} icon={faUnlock} style={{position:'absolute', left:15}}/>
+                <FontAwesomeIcon size={20} icon={faUnlock} style={{position:'absolute', left:20}}/>
                 <TextInput
                     style={{
                         padding: 10,
@@ -100,7 +100,7 @@ export default UserSignUp = ({navigation}) => {
                         width:400,
                         borderColor: 'black',
                         borderWidth: 2,
-                        borderRadius: 10,
+                        borderRadius: 15,
                         paddingLeft:50,
                         color:'black'
                     }}
@@ -113,10 +113,10 @@ export default UserSignUp = ({navigation}) => {
                 </View>
             </View>
             <View style={{ marginTop: 100, marginBottom:50 }}>
-                <View style={{ height: 50, borderColor: '#FF6600', borderWidth: 1, margin: 10, backgroundColor: '#FF6600', borderRadius: 10, justifyContent: 'center' }} >
+                <View style={{ height: 50, borderColor: '#FF6600', borderWidth: 1, margin: 10, backgroundColor: '#FF6600', borderRadius: 15, justifyContent: 'center' }} >
                     <Button onPress={() => { }} color={'white'} title='Create Account' />
                 </View>
-                <View style={{ height: 50, justifyContent: 'center', borderColor: '#000000', borderWidth: 1, margin: 10, backgroundColor: 'white', borderRadius: 10 }} >
+                <View style={{ height: 50, justifyContent: 'center', borderColor: '#000000', borderWidth: 1, margin: 10, backgroundColor: 'white', borderRadius: 15 }} >
                     <Button onPress={() => {navigation.navigate('SignIn')}} color={'black'} title='Sign In' />
                 </View>
             </View>
