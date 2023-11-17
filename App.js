@@ -14,6 +14,8 @@ import NavigationBar from './compnents/NavigationBar';
 import MyAccount from './Screens/MyAccount';
 import { LandingPage } from './PEJ/LandingPage';
 import OnboardingScreen from './PEJ/OnboardingScreen';
+import FoodDetails from './Screens/FoodDetails';
+import OrderTracking from './Screens/OrderTracking';
 const Stack = createStackNavigator()
 
 export default function App() {
@@ -32,6 +34,8 @@ export default function App() {
         <Stack.Screen options={{ headerShown: false }} name='Checkout' component={Checkout} />
         <Stack.Screen options={{ headerShown: false }} name='Confirmation' component={Confirmation} />
         <Stack.Screen options={{ headerShown: false }} name='My Account' component={MyAccount} />
+        <Stack.Screen options={{ headerShown: false }} name='Food Detail' component={FoodDetails} />
+        <Stack.Screen options={{ headerShown: false }} name='Order Tracking' component={OrderTracking} />
       </Stack.Navigator>
     </NavigationContainer>
   );

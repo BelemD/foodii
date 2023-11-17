@@ -38,7 +38,7 @@ export default SettingsPage = ({ navigation }) => {
                 <SettingsCard icon={<FontAwesomeIcon style={{ marginLeft: 10, marginRight: 20 }} size={20} icon={faCompass} />} description='My Orders' arrow={<FontAwesomeIcon icon={faChevronRight} style={{ marginRight: 10 }} />} />
                 <SettingsCard icon={<FontAwesomeIcon style={{ marginLeft: 10, marginRight: 20 }} size={20} icon={faCircleQuestion} />} description='Help' arrow={<FontAwesomeIcon icon={faChevronRight} style={{ marginRight: 10 }} />} />
                 <SettingsCard icon={<FontAwesomeIcon style={{ marginLeft: 10, marginRight: 20 }} size={20} icon={faArrowUpFromBracket} />} description='Upgrade' arrow={<FontAwesomeIcon icon={faChevronRight} style={{ marginRight: 10 }} />} />
-                <SettingsCard icon={<FontAwesomeIcon style={{ marginLeft: 10, marginRight: 20 }} size={20} icon={faLocationCrosshairs} />} description='Order Tracking' arrow={<FontAwesomeIcon icon={faChevronRight} style={{ marginRight: 10 }} />} />
+                <SettingsCard onPress={() => { navigation.navigate('Order Tracking') }} icon={<FontAwesomeIcon style={{ marginLeft: 10, marginRight: 20 }} size={20} icon={faLocationCrosshairs} />} description='Order Tracking' arrow={<FontAwesomeIcon icon={faChevronRight} style={{ marginRight: 10 }} />} />
             </View>
             <View style={{ marginTop: 230, marginBottom: 50 }}>
                 <View style={{ height: 50, borderColor: '#FF6600', borderWidth: 1, margin: 10, backgroundColor: '#FF6600', borderRadius: 10, justifyContent: 'center' }} >

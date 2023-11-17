@@ -11,7 +11,7 @@ const data = [
     { id: 4, title: 'Fruit Juice', price: '$5', imageSource: require('../assets/juice.png') }
 ]
 
-const FoodCard = ({ image, title, price }) => {
+const FoodCard = ({ image, title, price, navigation }) => {
     return (
         <View style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', elevation: 5, width: 200, height: 300, justifyContent: 'center', borderRadius: 10, alignItems: 'center', padding: 4, margin: 4, shadowColor: '#000', }}>
             <View>
@@ -22,12 +22,12 @@ const FoodCard = ({ image, title, price }) => {
                 </View>
                 <Image style={{ height: 20, width: 100, padding: 10, marginLeft: 5 }} source={require('../assets/rating.png')}></Image>
             </View>
+            <TouchableOpacity onPress={navigation} >
             <View style={{ width: 180, height: 25, borderColor: '#FF6600', margin: 15, backgroundColor: '#FF6600', borderRadius: 5, justifyContent: 'center', alignItems: 'center', marginBottom: 20 }} >
                 {/* <Button onPress={()=>{}} color={'black'} title='Add To Cart' /> */}
-                <TouchableOpacity>
                     <Text>Add To Cart</Text>
-                </TouchableOpacity>
             </View>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -72,7 +72,7 @@ export default HomePage = ({ navigation }) => {
                 {pair(data, 2).map((row, index) => (
                     <View key={index} style={index % 2 === 0 ? { flexDirection: 'row', justifyContent: 'space-between', width: "90%", marginBottom: 10 } : { flexDirection: 'row', justifyContent: 'space-between', width: "90%", marginBottom: 15 }}>
                         {row.map((item) => (
-                            <FoodCard key={item.id} title={item.title} price={item.price} image={item.imageSource} />
+                            <FoodCard key={item.id} title={item.title} price={item.price} image={item.imageSource} navigation={()=>{navigation.navigate('Food Detail')}} />
                         ))}
                     </View>
                 ))}
