@@ -11,7 +11,7 @@ export default OrderTracking = ({ navigation }) => {
             <View style={{ alignItems: 'center', marginTop: "5%", padding: 10, flexDirection: 'row' }}>
                 <View style={{ marginRight: "30%", padding: 10 }}>
                     <TouchableOpacity onPress={() => { navigation.navigate('Settings') }}>
-                        <FontAwesomeIcon size={25} icon={faChevronLeft} style={{ position: 'relative', left: 0, padding: 5 }} />
+                        <FontAwesomeIcon size={20} icon={faChevronLeft} style={{ position: 'relative', left: 0, padding: 5 }} />
                     </TouchableOpacity>
                 </View>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Order Tracking</Text>
